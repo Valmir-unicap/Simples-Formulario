@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Rede VJ</title>
+        <!--Fonte para titulo / Usei Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap" rel="stylesheet">
+        
+    </head>
+    <!--Titulo-->
+    <h1 style="font-family: 'Edu QLD Beginner', cursive;">Rede VJ</h1>
+    <br>
+    <h2>Cadastra-se</h2>
+    <div>E fácil e rápido.</div>
+    <br>
+    <!--Formulário / Feito com Formspree-->   
+    <form action="https://formspree.io/f/mayvroja" method="POST">
+        <p>
+        <!--Campo de nome-->
+        <label><b>Digite seu nome completo</b></label>
+        <input placeholder="Digite algo..." type="text" required="required" name="nome">
+        <br></p>
+        <p>
+        <!--Campo de login-->
+        <label><b>Digite login de seu email, já existente</b></label>
+        <input placeholder="Digite algo..." type="text" required="required" name="login">
+        <br></p>
+        <p>
+        <!--Campo de senha-->
+        <label><b>Digite sua senha</b></label>
+        <input placeholder="Digite algo..." type="password" required="required" name="senha">
+        <br></p>
+        <p>
+        <!--Nome de usuario-->
+        <label><b>Digite seu nome de usuário</b></label>
+        <input placeholder="Digite algo..." type="text" required="required" name="usuario">
+        <br></p>
+        <p>
+        <!--Campo de data-->
+        <label><b>Digite sua data de nascimento</b></label>       
+        <input type="date" required="required" name="nascimento">
+        <br></p>
+        <!--Status civil-->
+        <p><label><b>Qual seu status civil</b></label></p>
+        <ul>
+            <li><input type="radio" value="Namorando" name="status">Namorando</li>
+            <li><input type="radio" value="Casado" name="status">Casado</li>
+            <li><input type="radio" value="Solteiro" name="status">Solteiro</li>
+            <li><input type="radio" value="Viuvo / Divorciado" name="status">Viuvo / Divorciado</li>
+            <li><input type="radio" value="Prefiro não declarar" name="status">Prefiro não declarar</li>
+        </ul>
+        <!--Seu sexo-->
+        <p><label><b>Escolha seu genero</b></label>
+            <select>
+                <option>Masculino</option>
+                <option>Feminino</option>
+                <option>LGBTQIA+</option>
+                <option>Prefiro não declarar</option>
+            </select>
+        </p>
+        <!--Campo de mensagem-->
+        <label><b>Digite a bio, para seu perfil</b></label><br>
+        <textarea placeholder="Digite algo.." rows="10" cols="60"></textarea>
+        <!--Campo de TermosCompromisso-->
+        <p><input type="checkbox" required="required" value="SIM" name="TermosContrato">Aceitar termos de compromisso</p>
+        <button type="submit" required="required">Enviar</button>
+    </form>
+</html>
